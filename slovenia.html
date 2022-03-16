@@ -54,16 +54,13 @@
     <div class="container">
       <small>Soca Valley Forecast</small>
       <ul>
-        <li>Friday 07:45</li>
+        <li id="date"></li>
         <li id="conditions"></li>
       </ul>
 
       <div class="row">
         <div class="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            alt=""
-          />
+          <img src="" alt="" id="icon" />
           <strong id="temp"></strong><span class="celcius">°C</span>
         </div>
         <div class="col-6">
@@ -100,6 +97,27 @@
       </div>
     </div>
     <script>
+      function formatDate(timestamp) {
+        let date = new Date(timestamp);
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        if (minutes < 10) {
+          minutes = `0${minutes}`;
+        }
+        let days = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        let day = days[date.getDay()];
+
+        return `${day} ${hours}:${minutes}`;
+      }
+
       function displayTemperature(response) {
         document.getElementById("temp").innerHTML = Math.round(
           response.data.main.temp
@@ -116,11 +134,22 @@
           "humidityElement"
         ).innerHTML = `Humidity: ${humidity}%`;
 
+        let dateElement = document.getElementById("date");
+        dateElement.innerHTML = formatDate(response.data.dt * 1000);
+
+        let iconElement = document.getElementById("icon");
+        let iconImage = response.data.weather[0].icon;
+        iconElement.setAttribute(
+          "src",
+          `http://openweathermap.org/img/wn/${iconImage}@2x.png`
+        );
+
         console.log(response.data);
       }
 
       let apiKey = "d23a0d3530ddedd914cb8e35a010be9d";
-      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Tolmin&appid=d23a0d3530ddedd914cb8e35a010be9d&units=metric`;
+      let city = "Tolmin";
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
       axios.get(apiUrl).then(displayTemperature);
     </script>
   </body>

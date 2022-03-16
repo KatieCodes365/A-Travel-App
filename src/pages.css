@@ -260,11 +260,17 @@ small {
 }
 
 strong {
-  font-size: 50px;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
 }
 
 .celcius {
   font-size: 18px;
   position: relative;
   top: -26px;
+}
+
+#icon {
+  margin-top: -30px;
 }
