@@ -47,15 +47,13 @@ function randomAfricaCountry() {
 
 // Generates a page on a suggested location in Europe
 
-let europeCountries = [
-  "file:///Users/katiekennedy/Documents/A-Travel%20App/src/slovenia.html",
-  "file:///Users/katiekennedy/Documents/A-Travel%20App/src/croatia.html",
-  "file:///Users/katiekennedy/Documents/A-Travel%20App/src/italy.html",
-];
+let europeCountries = ["./slovenia.html", "./croatia.html", "./italy.html"];
 
 function randomEuropeanCountry() {
-  window.location =
+  let location =
     europeCountries[Math.floor(Math.random() * europeCountries.length)];
+  document.getElementById("Eur").setAttribute("href", `${location}`);
+  document.getElementById("europeMap").setAttribute("href", `${location}`);
 }
 
 // Generates a page on a suggested location in Asia
