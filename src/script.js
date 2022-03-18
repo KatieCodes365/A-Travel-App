@@ -47,7 +47,12 @@ function randomAfricaCountry() {
 
 // Generates a page on a suggested location in Europe
 
-let europeCountries = ["./slovenia.html", "./croatia.html", "./italy.html"];
+let europeCountries = [
+  "countries/slovenia.html",
+  "countries/croatia.html",
+  "countries/italy.html",
+  "countries/switzerland.html",
+];
 
 function randomEuropeanCountry() {
   let location =
