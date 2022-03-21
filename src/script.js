@@ -49,9 +49,10 @@ function randomAfricaCountry() {
 
 let europeCountries = [
   "countries/slovenia.html",
-  "countries/croatia.html",
-  "countries/italy.html",
-  "countries/switzerland.html",
+  "countries/Portmeirion.html",
+  "countries/Chioggia.html",
+  "countries/Baleal.html",
+  "countries/Ticino.html",
 ];
 
 function randomEuropeanCountry() {
@@ -77,12 +78,16 @@ function randomAsiaCountry() {
 // Generates a page on a suggested location in Australia
 
 let australiaCountries = [
-  "https://www.bbc.co.uk/iplayer",
-  "https://www.channel4.com",
-  "https://www.itv.com",
+  "countries/blueMountains.html",
+  "countries/Bungle.html",
+  "countries/Cairnes.html",
+  "countries/Hobart.html",
+  "countries/melbourne.html",
 ];
 
 function randomAustralianCountry() {
-  window.location =
+  let location =
     australiaCountries[Math.floor(Math.random() * australiaCountries.length)];
+  document.getElementById("aus").setAttribute("href", `${location}`);
+  document.getElementById("auspeMap").setAttribute("href", `${location}`);
 }
