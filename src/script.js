@@ -2,9 +2,9 @@
 
 // Generates a page on a suggested location in North America
 let nAmericaCountries = [
-  "countries/Kanab.html",
-  "countries/Orleans.html",
-  "countries/emeraldLake.html",
+  "./countries/Kanab.html",
+  "./countries/Orleans.html",
+  "./countries/emeraldLake.html",
 ];
 
 function randomNACountry() {
@@ -17,9 +17,9 @@ function randomNACountry() {
 // Generates a page on a suggested location in South America
 
 let sAmericaCountries = [
-  "countries/Bogota.html",
-  "countries/Nicaragua.html",
-  "countries/rainbowMountains.html",
+  "./countries/Bogota.html",
+  "./countries/Nicaragua.html",
+  "./countries/rainbowMountains.html",
 ];
 
 function randomSACountry() {
@@ -32,9 +32,9 @@ function randomSACountry() {
 // Generates a page on a suggested location in Africa
 
 let africaCountries = [
-  "countries/Mauritius.html",
-  "countries/Gonarezhou.html",
-  "countries/Mozambique.html",
+  "./countries/Mauritius.html",
+  "./countries/Gonarezhou.html",
+  "./countries/Mozambique.html",
 ];
 
 function randomAfricaCountry() {
@@ -47,11 +47,11 @@ function randomAfricaCountry() {
 // Generates a page on a suggested location in Europe
 
 let europeCountries = [
-  "countries/slovenia.html",
-  "countries/Portmeirion.html",
-  "countries/Chioggia.html",
-  "countries/Baleal.html",
-  "countries/Ticino.html",
+  "./countries/slovenia.html",
+  "./countries/Portmeirion.html",
+  "./countries/Chioggia.html",
+  "./countries/Baleal.html",
+  "./countries/Ticino.html",
 ];
 
 function randomEuropeanCountry() {
@@ -64,9 +64,9 @@ function randomEuropeanCountry() {
 // Generates a page on a suggested location in Asia
 
 let asiaCountries = [
-  "countries/Kyoto.html",
-  "countries/Coron.html",
-  "countries/Pamukkale.html",
+  "./countries/Kyoto.html",
+  "./countries/Coron.html",
+  "./countries/Pamukkale.html",
 ];
 
 function randomAsiaCountry() {
@@ -80,11 +80,11 @@ function randomAsiaCountry() {
 // Generates a page on a suggested location in Australia
 
 let australiaCountries = [
-  "countries/blueMountains.html",
-  "countries/Bungle.html",
-  "countries/Cairnes.html",
-  "countries/Hobart.html",
-  "countries/melbourne.html",
+  "./countries/blueMountains.html",
+  "./countries/Bungle.html",
+  "./countries/Cairnes.html",
+  "./countries/Hobart.html",
+  "./countries/melbourne.html",
 ];
 
 function randomAustralianCountry() {

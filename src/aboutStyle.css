@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 30px 30px 0px 30px;
+  font-size: 60px;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
+  padding: 15px;
+}
+
+.button {
+  font-family: "Oswald", sans-serif;
+  color: rgb(221, 74, 86);
+}
+
+.button:hover {
+  color: rgb(221, 74, 86);
+}
+
+#home {
+  font-size: 20px;
+  text-decoration: none;
+  color: #36454f;
+  position: absolute;
+  margin-top: -700px;
+  margin-left: -380px;
+  border-radius: 3px;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 0;
+  background-color: rgb(229, 228, 221, 0.8);
+  border: solid 2px rgb(221, 74, 86, 0.6);
+}
+
+#home:hover {
+  border: solid 6px rgba(166, 214, 198);
+}
+
+#box {
+  border: 5px solid rgb(221, 74, 86, 0.6);
+  background-color: rgba(166, 214, 198, 0.8);
+  width: 800px;
+  height: 500px;
+  left: 335px;
+  top: 200px;
+  position: absolute;
+}

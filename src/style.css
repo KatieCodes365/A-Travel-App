@@ -11,7 +11,7 @@ h1 {
   font-family: monospace;
   color: rgb(221, 74, 86);
   font-size: 40px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 270px;
   position: absolute;
   display: block;
@@ -32,12 +32,12 @@ a {
 }
 
 #map {
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 #Eur {
   position: absolute;
-  top: 215px;
+  top: 230px;
   left: 780px;
 }
 
@@ -49,7 +49,7 @@ a {
 
 #aus {
   position: absolute;
-  top: 630px;
+  top: 640px;
   left: 1200px;
 }
 
@@ -71,12 +71,51 @@ a {
   left: 330px;
 }
 
+.button {
+  font-family: "Oswald", sans-serif;
+  color: rgb(221, 74, 86);
+}
+
+.button:hover {
+  color: rgb(221, 74, 86);
+}
+
+#about {
+  font-size: 20px;
+  text-decoration: none;
+  color: #36454f;
+  position: absolute;
+  margin-top: 700px;
+  margin-left: 20px;
+  border-radius: 3px;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 0;
+  background-color: rgb(229, 228, 221, 0.8);
+  border: solid 2px rgb(221, 74, 86, 0.6);
+}
+
+#about:hover {
+  border: solid 6px rgba(166, 214, 198);
+}
+
 a:hover {
   background: rgb(247, 202, 192);
   font-size: 25px;
   color: rgb(221, 74, 86);
   text-decoration: underline;
   cursor: pointer;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  margin-top: 75px;
+  margin-left: 520px;
+  position: absolute;
 }
 
 footer {

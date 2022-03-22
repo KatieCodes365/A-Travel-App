@@ -47,8 +47,6 @@ button:hover {
 }
 
 #home {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 20px;
   text-decoration: none;
   color: #36454f;
@@ -57,8 +55,6 @@ button:hover {
 }
 
 #flight {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #36454f;
   font-size: 16px;
   top: 50px;
