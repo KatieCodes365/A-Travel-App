@@ -9,40 +9,46 @@ homepageName.innerText = `Are you ready for your next adventure ${customName}?`;
 
 // Generates a page on a suggested location in North America
 let nAmericaCountries = [
-  "https://www.bbc.co.uk/iplayer",
-  "https://www.channel4.com",
-  "https://www.itv.com",
+  "countries/Kanab.html",
+  "countries/Orleans.html",
+  "countries/emeraldLake.html",
 ];
 
 function randomNACountry() {
-  window.location =
+  let location =
     nAmericaCountries[Math.floor(Math.random() * nAmericaCountries.length)];
+  document.getElementById("na").setAttribute("href", `${location}`);
+  document.getElementById("nAmericaMap").setAttribute("href", `${location}`);
 }
 
 // Generates a page on a suggested location in South America
 
 let sAmericaCountries = [
-  "https://www.bbc.co.uk/iplayer",
-  "https://www.channel4.com",
-  "https://www.itv.com",
+  "countries/Bogota.html",
+  "countries/Nicaragua.html",
+  "countries/rainbowMountains.html",
 ];
 
 function randomSACountry() {
-  window.location =
+  let location =
     sAmericaCountries[Math.floor(Math.random() * sAmericaCountries.length)];
+  document.getElementById("sa").setAttribute("href", `${location}`);
+  document.getElementById("sAmericaMap").setAttribute("href", `${location}`);
 }
 
 // Generates a page on a suggested location in Africa
 
 let africaCountries = [
-  "https://www.bbc.co.uk/iplayer",
-  "https://www.channel4.com",
-  "https://www.itv.com",
+  "countries/Mauritius.html",
+  "countries/Gonarezhou.html",
+  "countries/Mozambique.html",
 ];
 
 function randomAfricaCountry() {
-  window.location =
+  let location =
     africaCountries[Math.floor(Math.random() * africaCountries.length)];
+  document.getElementById("afri").setAttribute("href", `${location}`);
+  document.getElementById("africaMap").setAttribute("href", `${location}`);
 }
 
 // Generates a page on a suggested location in Europe
@@ -65,14 +71,17 @@ function randomEuropeanCountry() {
 // Generates a page on a suggested location in Asia
 
 let asiaCountries = [
-  "https://www.bbc.co.uk/iplayer",
-  "https://www.channel4.com",
-  "https://www.itv.com",
+  "countries/Kyoto.html",
+  "countries/Coron.html",
+  "countries/Pamukkale.html",
 ];
 
 function randomAsiaCountry() {
-  window.location =
+  let location =
     asiaCountries[Math.floor(Math.random() * asiaCountries.length)];
+  document.getElementById("asia").setAttribute("href", `${location}`);
+  document.getElementById("asiaMapA").setAttribute("href", `${location}`);
+  document.getElementById("asiaMapB").setAttribute("href", `${location}`);
 }
 
 // Generates a page on a suggested location in Australia
@@ -89,5 +98,7 @@ function randomAustralianCountry() {
   let location =
     australiaCountries[Math.floor(Math.random() * australiaCountries.length)];
   document.getElementById("aus").setAttribute("href", `${location}`);
-  document.getElementById("auspeMap").setAttribute("href", `${location}`);
+  document.getElementById("ausMapA").setAttribute("href", `${location}`);
+  document.getElementById("ausMapB").setAttribute("href", `${location}`);
+  document.getElementById("ausMapC").setAttribute("href", `${location}`);
 }
