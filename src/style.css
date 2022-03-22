@@ -4,15 +4,15 @@
 }
 
 body {
-  background-color: #fbf8f1;
+  background-color: rgb(247, 202, 192, 0.2);
 }
 
 h1 {
   font-family: monospace;
-  color: #963a2f;
+  color: rgb(221, 74, 86);
   font-size: 40px;
   margin-top: 30px;
-  margin-left: 180px;
+  margin-left: 270px;
   position: absolute;
   display: block;
   text-transform: capitalize;
@@ -20,7 +20,7 @@ h1 {
 
 a {
   font-family: monospace;
-  color: #963a2f;
+  color: rgb(221, 74, 86);
   font-size: 20px;
   position: relative;
   text-decoration: none;
@@ -32,16 +32,16 @@ a {
 }
 
 #map {
-  margin-top: 10px;
+  margin-top: 80px;
 }
 
-#eur {
+#Eur {
   position: absolute;
-  top: 245px;
-  left: 730px;
+  top: 215px;
+  left: 780px;
 }
 
-#asi {
+#asia {
   position: absolute;
   top: 300px;
   left: 1000px;
@@ -50,7 +50,7 @@ a {
 #aus {
   position: absolute;
   top: 630px;
-  left: 1190px;
+  left: 1200px;
 }
 
 #afri {
@@ -61,8 +61,8 @@ a {
 
 #na {
   position: absolute;
-  top: 290px;
-  left: 180px;
+  top: 270px;
+  left: 190px;
 }
 
 #sa {
@@ -72,9 +72,9 @@ a {
 }
 
 a:hover {
-  background: #963a2f;
+  background: rgb(247, 202, 192);
   font-size: 25px;
-  color: #fbf8f1;
+  color: rgb(221, 74, 86);
   text-decoration: underline;
   cursor: pointer;
 }

@@ -1,10 +1,3 @@
-// Adds users name to the homepage
-let homepageName = document.getElementById("username");
-let customName = prompt(
-  "Welcome! We hope we can help you find your next adventure. To begin please enter your name:"
-);
-homepageName.innerText = `Are you ready for your next adventure ${customName}?`;
-
 // Random Country Page Generator
 
 // Generates a page on a suggested location in North America
