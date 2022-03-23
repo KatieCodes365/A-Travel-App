@@ -6,12 +6,12 @@ h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 30px 30px 0px 30px;
-  font-size: 60px;
+  font-size: 26px;
 }
 
 p {
   font-family: "Oswald", sans-serif;
-  font-size: 26px;
+  font-size: 17px;
   padding: 15px;
 }
 
@@ -22,6 +22,11 @@ p {
 
 .button:hover {
   color: rgb(221, 74, 86);
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+  height: 50%;
 }
 
 #home {
@@ -49,9 +54,86 @@ p {
 #box {
   border: 5px solid rgb(221, 74, 86, 0.6);
   background-color: rgba(166, 214, 198, 0.8);
-  width: 800px;
-  height: 500px;
-  left: 335px;
-  top: 200px;
+  width: 100%;
+  height: 430px;
+  left: 0;
+  right: 0;
+  top: 415px;
   position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    padding: 30px 30px 0px 30px;
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 30px;
+    padding: 15px;
+  }
+
+  .button:hover {
+    color: rgb(221, 74, 86);
+  }
+
+  #carouselExampleIndicators {
+    width: 100%;
+    height: 100%;
+  }
+
+  #home {
+    font-size: 20px;
+    margin-top: -1050px;
+    margin-left: -385px;
+    width: 100px;
+    height: 40px;
+  }
+
+  #home:hover {
+    border: solid 6px rgba(166, 214, 198);
+  }
+
+  #box {
+    width: 95%;
+    height: 600px;
+    left: 20px;
+    right: 20px;
+    top: 200px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    padding: 30px 30px 0px 30px;
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 26px;
+    padding: 15px;
+  }
+
+  .button:hover {
+    color: rgb(221, 74, 86);
+  }
+
+  #home {
+    font-size: 20px;
+    margin-top: -700px;
+    margin-left: -380px;
+    width: 220px;
+    height: 50px;
+  }
+
+  #home:hover {
+    border: solid 6px rgba(166, 214, 198);
+  }
+
+  #box {
+    width: 800px;
+    height: 500px;
+    left: 335px;
+    top: 200px;
+  }
 }
