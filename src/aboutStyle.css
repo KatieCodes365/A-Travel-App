@@ -27,6 +27,7 @@ p {
 #carouselExampleIndicators {
   width: 100%;
   height: 50%;
+  z-index: 0;
 }
 
 #home {
@@ -34,15 +35,15 @@ p {
   text-decoration: none;
   color: #36454f;
   position: absolute;
-  margin-top: -700px;
-  margin-left: -380px;
+  top: 10px;
+  left: 10px;
   border-radius: 3px;
-  width: 220px;
+  width: 150px;
   height: 50px;
   border: none;
   outline: none;
   cursor: pointer;
-  z-index: 0;
+  z-index: 1;
   background-color: rgb(229, 228, 221, 0.8);
   border: solid 2px rgb(221, 74, 86, 0.6);
 }
@@ -60,6 +61,10 @@ p {
   right: 0;
   top: 415px;
   position: absolute;
+}
+
+#contentWrapper {
+  max-width: 768px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -84,9 +89,9 @@ p {
 
   #home {
     font-size: 20px;
-    margin-top: -1050px;
-    margin-left: -385px;
-    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
     height: 40px;
   }
 
@@ -100,6 +105,10 @@ p {
     left: 20px;
     right: 20px;
     top: 200px;
+  }
+
+  #contentWrapper {
+    max-width: 1000px;
   }
 }
 
@@ -135,5 +144,9 @@ p {
     height: 500px;
     left: 335px;
     top: 200px;
+  }
+
+  #contentWrapper {
+    max-width: none;
   }
 }
