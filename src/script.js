@@ -73,8 +73,7 @@ function randomAsiaCountry() {
   let location =
     asiaCountries[Math.floor(Math.random() * asiaCountries.length)];
   document.getElementById("asia").setAttribute("href", `${location}`);
-  document.getElementById("asiaMapA").setAttribute("href", `${location}`);
-  document.getElementById("asiaMapB").setAttribute("href", `${location}`);
+  document.getElementById("asiaMap").setAttribute("href", `${location}`);
 }
 
 // Generates a page on a suggested location in Australia
@@ -91,7 +90,5 @@ function randomAustralianCountry() {
   let location =
     australiaCountries[Math.floor(Math.random() * australiaCountries.length)];
   document.getElementById("aus").setAttribute("href", `${location}`);
-  document.getElementById("ausMapA").setAttribute("href", `${location}`);
-  document.getElementById("ausMapB").setAttribute("href", `${location}`);
-  document.getElementById("ausMapC").setAttribute("href", `${location}`);
+  document.getElementById("ausMap").setAttribute("href", `${location}`);
 }

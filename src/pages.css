@@ -4,6 +4,78 @@ body {
   background-color: rgb(229, 228, 221, 0.1);
 }
 
+button {
+  position: relative;
+  border-radius: 3px;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 0;
+  background-color: rgb(229, 228, 221, 0.8);
+  border: solid 2px rgb(221, 74, 86, 0.6);
+}
+
+button:hover {
+  border: solid 6px rgba(166, 214, 198);
+}
+
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: relative;
+  top: 740px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  list-style: none;
+  font-family: monospace;
+  text-transform: capitalize;
+}
+
+strong {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+small {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+p {
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  color: #36454f;
+  margin: 30px;
+  text-align: center;
+  right: 640px;
+  background-color: rgb(221, 74, 86, 0.6);
+  border: solid 4px rgb(221, 74, 86, 0.1);
+  border-radius: 1px;
+  box-shadow: 5px 10px rgb(221, 74, 86);
+}
+
+.button {
+  font-family: "Oswald", sans-serif;
+  color: rgb(221, 74, 86);
+}
+
+.button:hover {
+  color: rgb(221, 74, 86);
+}
+
 .location {
   font-family: "League Spartan", sans-serif;
   color: rgb(221, 74, 86);
@@ -21,105 +93,21 @@ body {
   border-radius: 3px;
 }
 
-button {
+.container {
+  background-color: rgba(170, 240, 209, 0.3);
+  width: 460px;
+  height: 230px;
+  margin-top: 520px;
+  margin-left: 30px;
+  padding: 20px;
+  border: 3px solid rgba(166, 214, 198 0.8);
+  border-radius: 6px;
+}
+
+.celcius {
+  font-size: 18px;
   position: relative;
-  border-radius: 3px;
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  z-index: 0;
-  background-color: rgb(229, 228, 221, 0.8);
-  border: solid 2px rgb(221, 74, 86, 0.6);
-}
-
-button:hover {
-  border: solid 6px rgba(166, 214, 198);
-}
-.button {
-  font-family: "Oswald", sans-serif;
-  color: rgb(221, 74, 86);
-}
-
-.button:hover {
-  color: rgb(221, 74, 86);
-}
-
-#home {
-  font-size: 20px;
-  text-decoration: none;
-  color: #36454f;
-  top: 50px;
-  left: 20px;
-}
-
-#flight {
-  color: #36454f;
-  font-size: 16px;
-  top: 50px;
-  left: 960px;
-}
-
-#background {
-  position: absolute;
-  left: 0px;
-  top: -50px;
-  z-index: -2;
-  opacity: 0.9;
-}
-
-p {
-  position: absolute;
-  font-family: "Oswald", sans-serif;
-  color: #36454f;
-  margin: 30px;
-  text-align: center;
-  right: 640px;
-  background-color: rgb(221, 74, 86, 0.6);
-  border: solid 4px rgb(221, 74, 86, 0.1);
-  border-radius: 1px;
-  box-shadow: 5px 10px rgb(221, 74, 86);
-}
-#para1 {
-  top: 410px;
-  font-size: 32px;
-}
-#para2 {
-  top: 550px;
-  right: 640px;
-  background-color: rgb(221, 74, 86, 0.6);
-  border: solid 4px rgb(221, 74, 86, 0.1);
-  font-size: 55px;
-  padding: 25px 50px;
-  box-shadow: -10px -5px rgb(221, 74, 86);
-}
-
-#para-link {
-  font-family: "Oswald", sans-serif;
-  color: rgb(221, 74, 86);
-  text-decoration: none;
-}
-
-#para2:hover {
-  text-decoration: underline;
-  font-size: 60px;
-  cursor: pointer;
-}
-
-h2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  position: relative;
-  top: 740px;
-}
-
-#img-container {
-  display: flex;
-  flex: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 50px;
+  top: -26px;
 }
 
 .image-img {
@@ -191,47 +179,53 @@ h2 {
   opacity: 1;
 }
 
-.container {
-  background-color: rgba(170, 240, 209, 0.3);
-  width: 460px;
-  height: 230px;
-  margin-top: 520px;
-  margin-left: 30px;
-  padding: 20px;
-  border: 3px solid rgba(166, 214, 198 0.8);
-  border-radius: 6px;
+#home {
+  font-size: 20px;
+  text-decoration: none;
+  color: #36454f;
+  top: 50px;
+  left: 20px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0;
-  padding: 0;
+#flight {
+  color: #36454f;
   font-size: 16px;
-  list-style: none;
-  font-family: monospace;
-  text-transform: capitalize;
+  top: 50px;
+  left: 960px;
 }
 
-small {
-  margin: 0;
-  padding: 0;
-  font-size: 30px;
+#background {
+  position: absolute;
+  left: 0px;
+  top: -50px;
+  z-index: -2;
+  opacity: 0.9;
 }
 
-strong {
+#para1 {
+  top: 410px;
+  font-size: 32px;
+}
+#para2 {
+  top: 550px;
+  right: 640px;
+  background-color: rgb(221, 74, 86, 0.6);
+  border: solid 4px rgb(221, 74, 86, 0.1);
+  font-size: 55px;
+  padding: 25px 50px;
+  box-shadow: -10px -5px rgb(221, 74, 86);
+}
+
+#para2:hover {
+  text-decoration: underline;
   font-size: 60px;
-  line-height: 1;
-  font-weight: 400;
+  cursor: pointer;
 }
 
-.celcius {
-  font-size: 18px;
-  position: relative;
-  top: -26px;
+#para-link {
+  font-family: "Oswald", sans-serif;
+  color: rgb(221, 74, 86);
+  text-decoration: none;
 }
 
 #icon {
@@ -244,4 +238,12 @@ strong {
   margin-top: 430px;
   margin-left: 350px;
   border: 10px solid rgba(166, 214, 198, 0.8);
+}
+
+#img-container {
+  display: flex;
+  flex: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
 }

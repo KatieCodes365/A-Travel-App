@@ -18,12 +18,35 @@ h1 {
   text-transform: capitalize;
 }
 
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  margin-top: 75px;
+  margin-left: 520px;
+  position: absolute;
+}
+
 a {
   font-family: monospace;
   color: rgb(221, 74, 86);
   font-size: 20px;
   position: relative;
   text-decoration: none;
+}
+
+a:hover {
+  background: rgb(247, 202, 192);
+  font-size: 25px;
+  color: rgb(221, 74, 86);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer {
+  font-family: monospace;
+  opacity: 0.7;
+  text-align: center;
+  font-size: 24px;
 }
 
 .content-wrapper {
@@ -100,27 +123,4 @@ a {
 
 #about:hover {
   border: solid 6px rgba(166, 214, 198);
-}
-
-a:hover {
-  background: rgb(247, 202, 192);
-  font-size: 25px;
-  color: rgb(221, 74, 86);
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-p {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  margin-top: 75px;
-  margin-left: 520px;
-  position: absolute;
-}
-
-footer {
-  font-family: monospace;
-  opacity: 0.7;
-  text-align: center;
-  font-size: 24px;
 }

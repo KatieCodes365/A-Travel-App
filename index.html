@@ -13,6 +13,7 @@
       >
       <h1 id="username">Ready to Discover your Next Adventure?</h1>
       <p>Double Click on the Continent you want to Visit:</p>
+      <!---javascript: randomCountry() calls the function in java when the link is clicked--->
       <a href="javascript:randomEuropeanCountry()" class="continent" id="Eur"
         >Europe</a
       >
@@ -32,7 +33,7 @@
         >Africa</a
       >
 
-      <!-- Navigation map: Makes area on the map a clickable link -->
+      <!-- Navigation map: Makes area on the map a clickable link calling java function -->
       <img src="imgs/Map-background.png" usemap="#image-map" id="map" />
 
       <map name="image-map">
@@ -55,7 +56,7 @@
           shape="poly"
         />
         <area
-          id="ausMapA"
+          id="ausMap"
           target=""
           alt="Australia"
           title="Australia"
@@ -73,7 +74,7 @@
           shape="poly"
         />
         <area
-          id="asiaMapA"
+          id="asiaMap"
           target=""
           alt="Asia"
           title="Asia"
